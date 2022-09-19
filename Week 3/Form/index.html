@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(187, 220, 248);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-3"></div>
+<div class="col-6">    
+    <h1 class="mb-3 pt-4">Advertising Estimate</h1>
+    <form>
+        <div class="mb-3">
+            <label for="companyName" class="form-label">Name / Company Name<span style="color:red">*</span></label>
+            <input type="text" class="form-control" id="companyName" aria-describedby="companyName" maxlength="10" required>
+        </div>
+        <div class="mb-3">
+            <label for="inputEmail1" class="form-label">Email address<span style="color:red">*</span></label>
+            <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" required>
+        </div>
+        <div class="mb-3 col-6">
+            <label for="startDate" class="form-label">Ad Start Date<span style="color:red">*</span></label>
+            <input type="date" class="form-control" id="startDate" aria-describedby="adStartDate" required>
+        </div>
+        <div class="mb-3 col-6">
+            <label for="endDate" class="form-label">Ad End Date<span style="color:red">*</span></label>
+            <input type="date" class="form-control" id="endDate" aria-describedby="adEndDate" required>
+        </div>
+        <div class="mb-3">
+            <p class="form-label">Advertising Size (pixels)</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="adSize" id="sizeOption1">
+                <label class="form-check-label" for="sizeOption1">
+                  Option 1
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="adSize" id="sizeOption2" checked>
+                <label class="form-check-label" for="sizeOption2">
+                  Option 2
+                </label>
+              </div>
+              <div class="form-check">
+                  <input type="radio" class="form-check-input" name="adSize" id="sizeOption3">
+                  <label for="sizeOption3" class="form-check-label">
+                      Option 3
+                  </label>
+              </div>
+        </div>
+        <div class="mb-3">
+            <p class="form-label">What site would you like to advertise on?</p>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check1" name="option1" value="Option1" checked>
+                <label class="form-check-label" for="check1">Option1</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check2" name="option2" value="Option2">
+                <label class="form-check-label" for="check2">Option2</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check3" name="option3" value="Option3">
+                <label class="form-check-label" for="check3">Option3</label>
+              </div>            
+        </div>
+        <div class="mb-3">
+            <label for="website1" class="form-label">Website to be Advertised<span style="color:red">*</span></label>
+            <input type="url" class="form-control" id="website1" required>
+        </div>
+        <div class="mb-3">
+            <label for="commentTextarea1" class="form-label">Comments</label>
+            <textarea class="form-control" id="commentTextarea1" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" id="formSubmit1">Submit</button>         
+    </form>
+</div>    
+</div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script>
+        let button1 = document.getElementById("formSubmit1");
+        button1.addEventListener('click', function(){
+            alert("Data Submitted Successfully.");
+        })
+    </script>
+</body>
+</html>

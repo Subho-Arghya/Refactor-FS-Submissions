@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Paragraph</title>
+    <style>
+        @media screen and (max-width: 600px) {
+           .responsivePara{
+            background-color: red;
+           } 
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px) {
+            .responsivePara{
+            background-color: green;
+           } 
+        }
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+            .responsivePara{
+            background-color: blue;
+           } 
+        }
+        @media screen and (min-width: 992px) and (max-width: 1199px) {
+            .responsivePara{
+            background-color: orange;
+           } 
+        }
+        @media screen and (min-width: 1200px){
+            .responsivePara{
+            background-color: pink;
+           } 
+        }
+    </style>
+</head>
+<body>
+    <h2>responsive paragraph using media query</h2>
+
+    <p class="responsivePara">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+         Nunc dictum enim at sapien suscipit ornare. Nunc commodo ipsum et ante malesuada porttitor. 
+         Fusce urna nibh, interdum sed consectetur vitae, gravida sed nulla. 
+         Curabitur imperdiet sagittis magna, imperdiet iaculis neque hendrerit quis. 
+         Integer a ex suscipit, accumsan nulla a, luctus neque. Etiam efficitur augue vitae rutrum vulputate.
+         Maecenas semper aliquet nunc. Nulla facilisi. Duis lacinia sem ac arcu facilisis laoreet. Duis quis velit dolor. Donec convallis pretium erat, eget congue nunc elementum nec. Suspendisse massa magna, dictum cursus nisl quis, tincidunt luctus dui.
+    </p>
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable</title>
+    <style>
+        
+        #overflow1 {
+            /*background: #4CAF50;*/
+            color: rgb(41, 24, 24);
+            padding: 15px;
+            width: 50%;
+            height: 100px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            border: 1px solid #ccc;
+        }
+
+        ::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gold; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+
+    </style>
+</head>
+<body>
+    <h2>CSS Overflow Scrollbar Modification</h2>
+    
+    <div id="overflow1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Cras semper ultricies massa vel tristique. Integer quis lacinia odio, id fringilla est. 
+            Aliquam erat volutpat. Aenean consectetur aliquam tempor. In ut pretium lorem. Quisque libero est, luctus ut erat vehicula, semper fringilla urna. In aliquet ligula eget elit pharetra, ut ultricies neque placerat.
+            Nunc ultricies eget velit eget feugiat. Mauris sodales placerat convallis.
+             Donec auctor pulvinar aliquet.Aliquam mollis lorem ac tortor sodales, sed consectetur mi efficitur. 
+            Fusce in nunc viverra, consectetur odio non, rhoncus nisl.
+            Sed accumsan sagittis elementum. Aenean rhoncus eros non malesuada malesuada.
+            Vivamus et nunc at sem vulputate convallis at quis libero. Maecenas sit amet scelerisque augue, ac sollicitudin magna. Proin dui dolor, tempor a viverra hendrerit, fermentum id enim. Curabitur iaculis dui elementum tempor euismod. Fusce fermentum, diam non faucibus egestas, turpis mi elementum ipsum, in ornare magna nibh nec quam.</p>
+    </div>
+</body>
+</html>
