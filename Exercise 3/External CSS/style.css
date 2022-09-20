@@ -1,0 +1,15 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.primarydiv {
+    margin: 5rem;
+}
+#para1 {
+    color:aqua;
+}
+#para1 span {
+    color: indigo;
+}
